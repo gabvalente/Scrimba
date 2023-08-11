@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    color: #5eb0c5;
+    /*background-image: url("images/galaxy.webp"); !* WebP is a raster graphics file format developed by Google intended as a replacement for JPEG, PNG, and GIF file formats. It supports both lossy and lossless compression, as well as animation and alpha transparency. *!*/
+    /*background-size: cover; !* the width of the background image is the same as the width of the container *!*/
+    text-align: center; /* this centers not only h1s but also buttons */
+    font-family: 'Orbitron', sans-serif; /* buttons don't inherit the font-family */
+}
+
+#title{
+    text-shadow: 0px 0px 1px white;
+}
+
+.btn {
+    padding: 6px 12px; /* top-bottom  left-right */
+    background: white; /* html applies a greyish color to buttons by default */
+    border: none;
+    font-family: inherit; /* buttons don't inherit the font-family by default */
+    color: #82a5ca;
+    font-weight: bold; /* font-weight can take both numerical values and named values */
+}
+
+.underline {
+    text-decoration: underline 4px solid white;
+    /*border-bottom: 4px solid white;*/
+}
+
+#main-logo{
+    width: 100px;
+}
+
+#hero {
+    background-image: url("images/galaxy.webp"); /* WebP is a raster graphics file format developed by Google intended as a replacement for JPEG, PNG, and GIF file formats. It supports both lossy and lossless compression, as well as animation and alpha transparency. */
+    background-size: cover; /* the width of the background image is the same as the width of the container */
+    padding: 10px 0 300px 0;
+}
