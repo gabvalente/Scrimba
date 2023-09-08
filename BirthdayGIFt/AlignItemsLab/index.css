@@ -1,0 +1,35 @@
+.container {
+    border: 8px solid #016a26;
+    height: 260px;
+    /*
+
+    justify-content:
+    start, center, end, space-around,
+    space-evenly, space-between
+
+    align-items:
+    start, center, end
+
+    */
+
+    /* display: flex; justify-content: start; align-items: start; Eis a divina trindade para centralizar uma div*/
+    /*divs are displayed as block elements by default*/
+    display: flex; /*makes the div a flex container*/
+    flex-direction: column; /*sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).*/
+    /*the properties below are applied to a flex container only*/
+    justify-content: start;  /*aligns the elements horizontally in the main axis*/
+    align-items: center; /*aligns the elements vertically in the cross axis*/
+
+    /*align-items has a default value of stretch*/
+
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    padding: 10px;
+    font-size: 50px;
+    border: 2px solid black;
+    background: linear-gradient(#14463d, #016a26);
+}
