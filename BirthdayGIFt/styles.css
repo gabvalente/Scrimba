@@ -1,0 +1,102 @@
+body { /* element selector */
+    text-align: center;
+    font-family: 'Happy Monkey', cursive; /* Google font */
+    background: linear-gradient(#a2d2ff, #EFB0C9); /* background gradient */
+    color: #ffffff; /* white text, inherited down to the body */
+    /*display: flex; !* turns every element into a flexbox with independent column*/
+    /* divs are block elements, so they take up the whole width of the page */
+    /*flex-direction: column; !* aligns the elements vertically *!*/
+    /*align-items: center; !* aligns the elements horizontally *!*/
+}
+
+#header {
+    display: flex; /*direction row by default*/
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+/*heading elements are by default displayed as block elements*/
+h1, h2, h3, h4, p { /* multiple element selector */
+    text-shadow: 0 0 1px black; /* parameters: horizontal offset, vertical offset, blur radius */
+    /* adds a shadow to the text (https://userway.org/contrast/?fg=ffffff&bg=a2d2ff)*/
+}
+
+#bff-img { /* id selector */
+    width: 150px; /* makes the image smaller */
+    border-radius: 50%; /* makes the image round. The max border radius is 50% */
+    border: 6px solid #EFB0C9;
+    margin-bottom: 10px; /* adds space between the image and the text */
+}
+
+#bday-age {
+    background: #EFB0C9;
+    padding: 5px 10px; /* top/bottom left/right */
+    border-radius: 5px;
+    margin: 5px 0 10px 0; /* top right bottom left */
+}
+
+#bday-date {
+    margin: 0; /* removes the default margin */
+    background: #EFB0C9;
+    padding: 5px 10px; /* top/bottom left/right */
+    border-radius: 5px; /* makes the background rounded */
+}
+
+.gift-section { /* class selector */
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-cheers {
+    height: 200px;
+}
+
+.gift-img { /* class selector to generically apply styling to multiple items */
+    /*display: inline;*/ /*divs are block elements by default, so they take up the whole width of the page*/
+    margin: 20px auto; /* centering the images */
+    max-width: 400px; /* max-width is used to make the image responsive */
+    height: 400px; /*making a 400x400 square*/
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg"); /* adds a background image */
+    background-size: cover; /* makes the background image cover the whole element */
+}
+
+/* hover pseudo-class selector */
+#gift-img-happy:hover { /* id selector to apply styling to individual items */
+    background-image: url("images/happy.gif"); /* changes the background image on hover */
+}
+
+#gift-img-hot:hover {
+    background-image: url("images/hot.gif");
+}
+
+#gift-img-genius:hover {
+    background-image: url("images/genius.gif");
+}
+
+#gift-img-badass:hover {
+    background-image: url("images/badass.gif");
+}
+
+#gift-img-cheers:hover {
+    background-image: url("images/cheers.gif");
+}
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a {
+    color: white;
+}
